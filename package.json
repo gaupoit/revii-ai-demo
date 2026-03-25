@@ -1,7 +1,7 @@
 {
   "name": "revii-ai-demo",
   "version": "1.0.0",
-  "description": "Revii AI Product Improvement Demos - Team Lead Application",
+  "description": "Revii AI Product Improvement Demos",
   "type": "module",
   "scripts": {
     "demo:roleplay": "node demo-roleplay.js",

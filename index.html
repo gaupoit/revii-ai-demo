@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -19,27 +21,32 @@
             padding: 40px 20px;
             background: #f5f5f5;
         }
+
         .container {
             background: white;
             padding: 50px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             font-size: 2em;
             color: #1a1a1a;
             margin-bottom: 5px;
         }
+
         .subtitle {
             font-size: 1.05em;
             color: #555;
             font-weight: 500;
             margin-bottom: 20px;
         }
+
         hr {
             border: none;
             border-top: 2px solid #e0e0e0;
             margin: 30px 0;
         }
+
         h2 {
             font-size: 1.3em;
             color: #1a1a1a;
@@ -47,28 +54,34 @@
             padding-bottom: 5px;
             border-bottom: 2px solid #0066cc;
         }
+
         h3 {
             font-size: 1.05em;
             color: #333;
             margin-bottom: 8px;
             margin-top: 20px;
         }
+
         p {
             margin-bottom: 12px;
         }
+
         ul {
             margin-left: 20px;
             margin-bottom: 15px;
         }
+
         li {
             margin-bottom: 6px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             font-size: 0.95em;
             margin-bottom: 20px;
         }
+
         th {
             text-align: left;
             padding: 8px 12px;
@@ -77,14 +90,17 @@
             color: #333;
             font-weight: 600;
         }
+
         td {
             padding: 8px 12px;
             border-bottom: 1px solid #e0e0e0;
         }
+
         .highlight-row td {
             font-weight: 700;
             background: #e8f4f8;
         }
+
         .score-bar {
             display: inline-block;
             height: 14px;
@@ -92,6 +108,7 @@
             border-radius: 3px;
             vertical-align: middle;
         }
+
         .score-bar-bg {
             display: inline-block;
             width: 120px;
@@ -101,11 +118,13 @@
             vertical-align: middle;
             position: relative;
         }
+
         .score-bar-bg .score-bar {
             position: absolute;
             top: 0;
             left: 0;
         }
+
         .callout {
             background: #f8f9fa;
             border-left: 4px solid #0066cc;
@@ -113,14 +132,17 @@
             margin: 15px 0;
             border-radius: 0 5px 5px 0;
         }
+
         .callout-green {
             background: #f0faf0;
             border-left-color: #28a745;
         }
+
         .callout-orange {
             background: #fff8f0;
             border-left-color: #fd7e14;
         }
+
         .savings-hero {
             background: linear-gradient(135deg, #0066cc, #0044aa);
             color: white;
@@ -129,37 +151,44 @@
             margin: 20px 0;
             text-align: center;
         }
+
         .savings-hero .big-number {
             font-size: 2.2em;
             font-weight: 700;
             margin: 5px 0;
         }
+
         .savings-hero .label {
             font-size: 0.95em;
             opacity: 0.9;
         }
+
         .savings-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 15px;
             margin: 20px 0;
         }
+
         .savings-card {
             background: #f8f9fa;
             border-radius: 8px;
             padding: 15px;
             text-align: center;
         }
+
         .savings-card .number {
             font-size: 1.4em;
             font-weight: 700;
             color: #0066cc;
         }
+
         .savings-card .desc {
             font-size: 0.85em;
             color: #666;
             margin-top: 4px;
         }
+
         .tag {
             display: inline-block;
             padding: 2px 10px;
@@ -168,25 +197,41 @@
             font-weight: 600;
             margin-right: 5px;
         }
-        .tag-high { background: #ffe0e0; color: #c0392b; }
-        .tag-medium { background: #fff3cd; color: #856404; }
-        .tag-low { background: #d4edda; color: #155724; }
+
+        .tag-high {
+            background: #ffe0e0;
+            color: #c0392b;
+        }
+
+        .tag-medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .tag-low {
+            background: #d4edda;
+            color: #155724;
+        }
+
         .improvement-tracker {
             background: #f8f9fa;
             padding: 15px 20px;
             border-radius: 8px;
             margin: 15px 0;
         }
+
         .improvement-row {
             display: flex;
             align-items: center;
             margin: 6px 0;
             font-size: 0.95em;
         }
+
         .improvement-row .date {
             width: 100px;
             color: #666;
         }
+
         .improvement-row .bar-container {
             flex: 1;
             height: 16px;
@@ -195,29 +240,34 @@
             margin: 0 10px;
             position: relative;
         }
+
         .improvement-row .bar {
             height: 100%;
             background: #0066cc;
             border-radius: 3px;
             transition: width 0.3s;
         }
+
         .improvement-row .score {
             width: 60px;
             text-align: right;
             font-weight: 600;
         }
+
         .model-routing {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 12px;
             margin: 15px 0;
         }
+
         .model-card {
             border: 1px solid #e0e0e0;
             border-radius: 8px;
             padding: 15px;
             text-align: center;
         }
+
         .model-card .complexity {
             font-size: 0.8em;
             font-weight: 600;
@@ -225,20 +275,32 @@
             letter-spacing: 0.5px;
             margin-bottom: 8px;
         }
+
         .model-card .model-name {
             font-size: 1em;
             font-weight: 700;
             color: #0066cc;
             margin-bottom: 4px;
         }
+
         .model-card .model-cost {
             font-size: 0.85em;
             color: #28a745;
             font-weight: 600;
         }
-        .model-card-high { border-top: 3px solid #c0392b; }
-        .model-card-medium { border-top: 3px solid #fd7e14; }
-        .model-card-low { border-top: 3px solid #28a745; }
+
+        .model-card-high {
+            border-top: 3px solid #c0392b;
+        }
+
+        .model-card-medium {
+            border-top: 3px solid #fd7e14;
+        }
+
+        .model-card-low {
+            border-top: 3px solid #28a745;
+        }
+
         .footer {
             margin-top: 30px;
             padding-top: 20px;
@@ -247,6 +309,7 @@
             color: #666;
             text-align: center;
         }
+
         .before-after {
             display: grid;
             grid-template-columns: 1fr 40px 1fr;
@@ -254,32 +317,47 @@
             margin: 20px 0;
             align-items: stretch;
         }
-        .before-box, .after-box {
+
+        .before-box,
+        .after-box {
             border-radius: 8px;
             padding: 20px;
         }
+
         .before-box {
             background: #fff5f5;
             border: 1px solid #fecaca;
         }
+
         .after-box {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
         }
-        .before-box .box-label, .after-box .box-label {
+
+        .before-box .box-label,
+        .after-box .box-label {
             font-size: 0.75em;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
         }
-        .before-box .box-label { color: #dc2626; }
-        .after-box .box-label { color: #16a34a; }
-        .before-box ul, .after-box ul {
+
+        .before-box .box-label {
+            color: #dc2626;
+        }
+
+        .after-box .box-label {
+            color: #16a34a;
+        }
+
+        .before-box ul,
+        .after-box ul {
             margin-left: 16px;
             margin-bottom: 0;
             font-size: 0.92em;
         }
+
         .arrow-col {
             display: flex;
             align-items: center;
@@ -288,6 +366,7 @@
             color: #0066cc;
             font-weight: 700;
         }
+
         .improvement-card {
             border: 1px solid #e0e0e0;
             border-radius: 10px;
@@ -296,6 +375,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .improvement-card::before {
             content: '';
             position: absolute;
@@ -304,9 +384,19 @@
             width: 4px;
             height: 100%;
         }
-        .improvement-card-1::before { background: #3b82f6; }
-        .improvement-card-2::before { background: #8b5cf6; }
-        .improvement-card-3::before { background: #f59e0b; }
+
+        .improvement-card-1::before {
+            background: #3b82f6;
+        }
+
+        .improvement-card-2::before {
+            background: #8b5cf6;
+        }
+
+        .improvement-card-3::before {
+            background: #f59e0b;
+        }
+
         .improvement-card .card-number {
             display: inline-block;
             width: 28px;
@@ -319,19 +409,31 @@
             color: white;
             margin-right: 8px;
         }
-        .improvement-card-1 .card-number { background: #3b82f6; }
-        .improvement-card-2 .card-number { background: #8b5cf6; }
-        .improvement-card-3 .card-number { background: #f59e0b; }
+
+        .improvement-card-1 .card-number {
+            background: #3b82f6;
+        }
+
+        .improvement-card-2 .card-number {
+            background: #8b5cf6;
+        }
+
+        .improvement-card-3 .card-number {
+            background: #f59e0b;
+        }
+
         .improvement-card h3 {
             display: inline;
             vertical-align: middle;
         }
+
         .impact-badges {
             display: flex;
             gap: 10px;
             margin-top: 12px;
             flex-wrap: wrap;
         }
+
         .impact-badge {
             display: inline-flex;
             align-items: center;
@@ -340,23 +442,57 @@
             font-size: 0.8em;
             font-weight: 600;
         }
-        .impact-badge-retention { background: #dbeafe; color: #1d4ed8; }
-        .impact-badge-cost { background: #dcfce7; color: #166534; }
-        .impact-badge-engagement { background: #fef3c7; color: #92400e; }
-        .impact-badge-trust { background: #ede9fe; color: #5b21b6; }
-        .impact-badge-speed { background: #fce7f3; color: #9d174d; }
+
+        .impact-badge-retention {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .impact-badge-cost {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .impact-badge-engagement {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .impact-badge-trust {
+            background: #ede9fe;
+            color: #5b21b6;
+        }
+
+        .impact-badge-speed {
+            background: #fce7f3;
+            color: #9d174d;
+        }
+
         @media print {
-            body { background: white; padding: 0; }
-            .container { box-shadow: none; padding: 20px; }
-            .savings-hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            .savings-hero {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Revii AI Improvement Report</h1>
         <div class="subtitle">Product Demo & Cost Optimization Proposal for Tom Ferry International</div>
-        <p style="color: #666; font-size: 0.95em;"><strong>Author:</strong> Paul Ng &nbsp;|&nbsp; <strong>Date:</strong> March 2026</p>
+        <p style="color: #666; font-size: 0.95em;"><strong>Author:</strong> Paul Ng &nbsp;|&nbsp; <strong>Date:</strong>
+            March 2026</p>
 
         <hr>
 
@@ -364,7 +500,8 @@
         <!-- HOW WE IMPROVE REVII AI                      -->
         <!-- ============================================ -->
         <h2>How We Improve Revii AI</h2>
-        <p>Three targeted improvements that increase agent engagement, reduce infrastructure costs, and build a scalable foundation for 500K+ users.</p>
+        <p>Three targeted improvements that increase agent engagement, reduce infrastructure costs, and build a scalable
+            foundation for 500K+ users.</p>
 
         <!-- Improvement 1 -->
         <div class="improvement-card improvement-card-1">
@@ -472,11 +609,15 @@
         <!-- DEMO 1: ROLEPLAY SCORING                     -->
         <!-- ============================================ -->
         <h2>Demo 1: Smart Roleplay Scoring Engine</h2>
-        <p>Enhanced AI roleplay system powered by <strong>GPT-4o</strong> with multi-dimensional scoring across 5 coaching dimensions, actionable feedback in Tom Ferry's style, and improvement tracking over time. <span style="color: #0066cc; font-weight: 600;">Live production results below.</span></p>
+        <p>Enhanced AI roleplay system powered by <strong>GPT-4o</strong> with multi-dimensional scoring across 5
+            coaching dimensions, actionable feedback in Tom Ferry's style, and improvement tracking over time. <span
+                style="color: #0066cc; font-weight: 600;">Live production results below.</span></p>
 
         <h3>Scenario: Expired Listing Call</h3>
-        <p style="font-size: 0.95em; color: #666;">Calling a homeowner whose listing expired after 120 days on market. Prospect is frustrated and skeptical of agents.</p>
-        <p style="font-size: 0.85em; color: #999;">Model: GPT-4o | Latency: 5.2s | Tokens: 1,525 | Cost: $0.011 per scoring</p>
+        <p style="font-size: 0.95em; color: #666;">Calling a homeowner whose listing expired after 120 days on market.
+            Prospect is frustrated and skeptical of agents.</p>
+        <p style="font-size: 0.85em; color: #999;">Model: GPT-4o | Latency: 5.2s | Tokens: 1,525 | Cost: $0.011 per
+            scoring</p>
 
         <table>
             <thead>
@@ -491,44 +632,70 @@
                 <tr>
                     <td>Rapport Building</td>
                     <td>80/100</td>
-                    <td><div class="score-bar-bg"><div class="score-bar" style="width: 80%;"></div></div></td>
+                    <td>
+                        <div class="score-bar-bg">
+                            <div class="score-bar" style="width: 80%;"></div>
+                        </div>
+                    </td>
                     <td>Used prospect's name naturally, acknowledged frustration with empathy</td>
                 </tr>
                 <tr>
                     <td>Needs Discovery</td>
                     <td>75/100</td>
-                    <td><div class="score-bar-bg"><div class="score-bar" style="width: 75%;"></div></div></td>
+                    <td>
+                        <div class="score-bar-bg">
+                            <div class="score-bar" style="width: 75%;"></div>
+                        </div>
+                    </td>
                     <td>Good open-ended question about previous experience, could probe deeper into motivation</td>
                 </tr>
                 <tr>
                     <td>Objection Handling</td>
                     <td>85/100</td>
-                    <td><div class="score-bar-bg"><div class="score-bar" style="width: 85%;"></div></div></td>
+                    <td>
+                        <div class="score-bar-bg">
+                            <div class="score-bar" style="width: 85%;"></div>
+                        </div>
+                    </td>
                     <td>Best area - used social proof (Smiths on Maple Street) with specific data</td>
                 </tr>
                 <tr>
                     <td>Call to Action</td>
                     <td>80/100</td>
-                    <td><div class="score-bar-bg"><div class="score-bar" style="width: 80%;"></div></div></td>
+                    <td>
+                        <div class="score-bar-bg">
+                            <div class="score-bar" style="width: 80%;"></div>
+                        </div>
+                    </td>
                     <td>Proposed specific time (Thursday 2pm), low pressure close</td>
                 </tr>
                 <tr>
                     <td>Market Knowledge</td>
                     <td>90/100</td>
-                    <td><div class="score-bar-bg"><div class="score-bar" style="width: 90%;"></div></div></td>
+                    <td>
+                        <div class="score-bar-bg">
+                            <div class="score-bar" style="width: 90%;"></div>
+                        </div>
+                    </td>
                     <td>Strong - referenced specific comparable sales and market data</td>
                 </tr>
                 <tr class="highlight-row">
                     <td>Overall (weighted)</td>
                     <td>82/100</td>
-                    <td><div class="score-bar-bg"><div class="score-bar" style="width: 82%; background: #28a745;"></div></div></td>
+                    <td>
+                        <div class="score-bar-bg">
+                            <div class="score-bar" style="width: 82%; background: #28a745;"></div>
+                        </div>
+                    </td>
                     <td>Scored by GPT-4o with structured output</td>
                 </tr>
             </tbody>
         </table>
 
         <div class="callout">
-            <strong>Tom Ferry's Coaching Tip (GPT-4o):</strong> "Great job handling objections with specific examples and social proof! Next time, dig deeper into their motivation and timeline to tailor your pitch even more effectively."
+            <strong>Tom Ferry's Coaching Tip (GPT-4o):</strong> "Great job handling objections with specific examples
+            and social proof! Next time, dig deeper into their motivation and timeline to tailor your pitch even more
+            effectively."
         </div>
 
         <h3>All 3 Scenarios Tested (Live GPT-4o Results)</h3>
@@ -571,33 +738,45 @@
         <div class="improvement-tracker">
             <div class="improvement-row">
                 <span class="date">Session 1</span>
-                <div class="bar-container"><div class="bar" style="width: 65%;"></div></div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 65%;"></div>
+                </div>
                 <span class="score">65</span>
             </div>
             <div class="improvement-row">
                 <span class="date">Session 2</span>
-                <div class="bar-container"><div class="bar" style="width: 71%;"></div></div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 71%;"></div>
+                </div>
                 <span class="score">71</span>
             </div>
             <div class="improvement-row">
                 <span class="date">Session 3</span>
-                <div class="bar-container"><div class="bar" style="width: 75%;"></div></div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
                 <span class="score">75</span>
             </div>
             <div class="improvement-row">
                 <span class="date">Session 4</span>
-                <div class="bar-container"><div class="bar" style="width: 78%;"></div></div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 78%;"></div>
+                </div>
                 <span class="score">78</span>
             </div>
             <div class="improvement-row">
                 <span class="date">Session 5</span>
-                <div class="bar-container"><div class="bar" style="width: 82%; background: #28a745;"></div></div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 82%; background: #28a745;"></div>
+                </div>
                 <span class="score">82</span>
             </div>
         </div>
 
         <div class="callout-green callout">
-            <strong>Production Stats:</strong> GPT-4o structured output with JSON Schema guarantees valid scoring every time. Cost per scoring: $0.011. Latency: ~5s. Supports 3 scenarios with unique conversations. Agents get specific, actionable coaching tips per dimension instead of a generic score.
+            <strong>Production Stats:</strong> GPT-4o structured output with JSON Schema guarantees valid scoring every
+            time. Cost per scoring: $0.011. Latency: ~5s. Supports 3 scenarios with unique conversations. Agents get
+            specific, actionable coaching tips per dimension instead of a generic score.
         </div>
 
         <hr>
@@ -606,8 +785,11 @@
         <!-- DEMO 2: RAG PIPELINE                         -->
         <!-- ============================================ -->
         <h2>Demo 2: RAG Pipeline for Real Estate Knowledge</h2>
-        <p>Domain-specific knowledge retrieval powered by <strong>GPT-4o</strong>. Every response is grounded in real coaching content and market data with source citations. <span style="color: #0066cc; font-weight: 600;">Live production results below.</span></p>
-        <p style="font-size: 0.85em; color: #999;">Model: GPT-4o | Avg Latency: 2.7s | Avg Cost: $0.0048/query | Knowledge Base: 7 docs</p>
+        <p>Domain-specific knowledge retrieval powered by <strong>GPT-4o</strong>. Every response is grounded in real
+            coaching content and market data with source citations. <span style="color: #0066cc; font-weight: 600;">Live
+                production results below.</span></p>
+        <p style="font-size: 0.85em; color: #999;">Model: GPT-4o | Avg Latency: 2.7s | Avg Cost: $0.0048/query |
+            Knowledge Base: 7 docs</p>
 
         <table>
             <thead>
@@ -654,14 +836,20 @@
         <h3>Sample GPT-4o Response (Live)</h3>
         <div class="callout" style="font-size: 0.92em;">
             <strong>Query:</strong> "A seller says my commission is too high. What do I say?"<br><br>
-            <strong>Revii AI:</strong> "I understand - commission is a real investment. Here's how I think about it: my job isn't just to find a buyer. It's to find you the RIGHT buyer at the HIGHEST price with the BEST terms. Last month, I negotiated $23,000 above asking by creating a competitive offer situation. My commission was $18,000. That's a net gain of $5,000 you wouldn't have had otherwise." <em>[Source 3: Commission Objection Response]</em><br><br>
-            <strong>ACTION STEP:</strong> Reach out to a past client today and ask if they'd be willing to share a testimonial about how you added value to their sale.
+            <strong>Revii AI:</strong> "I understand - commission is a real investment. Here's how I think about it: my
+            job isn't just to find a buyer. It's to find you the RIGHT buyer at the HIGHEST price with the BEST terms.
+            Last month, I negotiated $23,000 above asking by creating a competitive offer situation. My commission was
+            $18,000. That's a net gain of $5,000 you wouldn't have had otherwise." <em>[Source 3: Commission Objection
+                Response]</em><br><br>
+            <strong>ACTION STEP:</strong> Reach out to a past client today and ask if they'd be willing to share a
+            testimonial about how you added value to their sale.
         </div>
 
         <h3>Cache Test: Repeat Query</h3>
         <div class="callout-green callout" style="font-size: 0.92em;">
             <strong>Query 5 (repeat of Query 1):</strong> "How do I handle an expired listing call?"<br>
-            <strong>Result:</strong> CACHE HIT - Saved $0.0044, response served instantly with zero API call. This is how we achieve 70% cost reduction on repeat queries at scale.
+            <strong>Result:</strong> CACHE HIT - Saved $0.0044, response served instantly with zero API call. This is
+            how we achieve 70% cost reduction on repeat queries at scale.
         </div>
 
         <div class="savings-grid">
@@ -692,7 +880,9 @@
         </div>
 
         <div class="callout">
-            <strong>Production scale:</strong> 10,000+ coaching scripts, market reports, and Tom Ferry content indexed with weekly auto-refresh. Responses always cite sources with [Source N] format. Agents trust AI answers because they're grounded in real Tom Ferry methodology, not generic LLM knowledge.
+            <strong>Production scale:</strong> 10,000+ coaching scripts, market reports, and Tom Ferry content indexed
+            with weekly auto-refresh. Responses always cite sources with [Source N] format. Agents trust AI answers
+            because they're grounded in real Tom Ferry methodology, not generic LLM knowledge.
         </div>
 
         <hr>
@@ -701,8 +891,11 @@
         <!-- DEMO 3: COST OPTIMIZER                       -->
         <!-- ============================================ -->
         <h2>Demo 3: AI Agent Cost Optimization</h2>
-        <p>Intelligent model routing + response caching + prompt optimization = <strong>90% cost reduction</strong> at scale. GPT-4o generates the executive analysis from real cost simulation data. <span style="color: #0066cc; font-weight: 600;">Live production results below.</span></p>
-        <p style="font-size: 0.85em; color: #999;">Cost simulation: deterministic calculation | Executive analysis: GPT-4o | Latency: 5.0s | Tokens: 765 | Cost: $0.0067</p>
+        <p>Intelligent model routing + response caching + prompt optimization = <strong>90% cost reduction</strong> at
+            scale. GPT-4o generates the executive analysis from real cost simulation data. <span
+                style="color: #0066cc; font-weight: 600;">Live production results below.</span></p>
+        <p style="font-size: 0.85em; color: #999;">Cost simulation: deterministic calculation | Executive analysis:
+            GPT-4o | Latency: 5.0s | Tokens: 765 | Cost: $0.0067</p>
 
         <div class="savings-hero">
             <div class="label">Annual Savings at Full Scale (500K agents)</div>
@@ -861,20 +1054,34 @@
 
         <h3>Executive Analysis (GPT-4o, Live)</h3>
         <div class="callout" style="font-size: 0.92em;">
-            <p><strong>EXECUTIVE SUMMARY:</strong> Implementing the 3-layer optimization strategy can reduce AI infrastructure costs by 90%, saving up to $7.66 million annually at full scale. This approach uses intelligent model routing, response caching, and prompt compression, requiring only 6 person-weeks for implementation. The significant cost reduction positions us competitively by maintaining high-quality service at a fraction of the cost.</p>
+            <p><strong>EXECUTIVE SUMMARY:</strong> Implementing the 3-layer optimization strategy can reduce AI
+                infrastructure costs by 90%, saving up to $7.66 million annually at full scale. This approach uses
+                intelligent model routing, response caching, and prompt compression, requiring only 6 person-weeks for
+                implementation. The significant cost reduction positions us competitively by maintaining high-quality
+                service at a fraction of the cost.</p>
 
             <p style="margin-top: 12px;"><strong>TOP 3 RISKS:</strong></p>
             <ul style="margin-top: 4px;">
-                <li><strong>Quality Degradation:</strong> Potential drop in AI response quality could impact user satisfaction if not managed properly.</li>
-                <li><strong>Implementation Delays:</strong> The projected 2-3 sprints may extend due to unforeseen complexities, delaying cost savings.</li>
-                <li><strong>Cache Invalidation Issues:</strong> Ineffective cache management could lead to stale data, affecting the accuracy of responses.</li>
+                <li><strong>Quality Degradation:</strong> Potential drop in AI response quality could impact user
+                    satisfaction if not managed properly.</li>
+                <li><strong>Implementation Delays:</strong> The projected 2-3 sprints may extend due to unforeseen
+                    complexities, delaying cost savings.</li>
+                <li><strong>Cache Invalidation Issues:</strong> Ineffective cache management could lead to stale data,
+                    affecting the accuracy of responses.</li>
             </ul>
 
-            <p style="margin-top: 12px;"><strong>IMPLEMENTATION PRIORITY:</strong> Start with <strong>response caching</strong> using Redis with semantic matching, as it offers immediate cost reductions by reducing redundant API calls and can be implemented relatively quickly.</p>
+            <p style="margin-top: 12px;"><strong>IMPLEMENTATION PRIORITY:</strong> Start with <strong>response
+                    caching</strong> using Redis with semantic matching, as it offers immediate cost reductions by
+                reducing redundant API calls and can be implemented relatively quickly.</p>
 
-            <p style="margin-top: 12px;"><strong>COMPETITIVE ADVANTAGE:</strong> By achieving a 90% cost reduction while maintaining up to 92% quality, the company can offer more competitive pricing or invest savings into further innovation, outperforming competitors who face higher operational costs.</p>
+            <p style="margin-top: 12px;"><strong>COMPETITIVE ADVANTAGE:</strong> By achieving a 90% cost reduction while
+                maintaining up to 92% quality, the company can offer more competitive pricing or invest savings into
+                further innovation, outperforming competitors who face higher operational costs.</p>
 
-            <p style="margin-top: 12px; padding: 10px 15px; background: #dcfce7; border-radius: 5px;"><strong>RECOMMENDATION: GO.</strong> The substantial cost savings and competitive positioning justify the implementation, provided that quality controls are in place to mitigate potential risks.</p>
+            <p style="margin-top: 12px; padding: 10px 15px; background: #dcfce7; border-radius: 5px;">
+                <strong>RECOMMENDATION: GO.</strong> The substantial cost savings and competitive positioning justify
+                the implementation, provided that quality controls are in place to mitigate potential risks.
+            </p>
         </div>
 
         <hr>
@@ -916,23 +1123,34 @@
         </table>
 
         <div class="callout-green callout">
-            <strong>ROI:</strong> Total engineering investment is ~6 person-weeks. At 100K users, monthly savings of $127,599 means the project pays for itself in <strong>less than 1 week</strong> of savings. Quality safeguards include A/B testing, automated scoring on 5% of responses, and instant fallback to GPT-4o if quality drops.
+            <strong>ROI:</strong> Total engineering investment is ~6 person-weeks. At 100K users, monthly savings of
+            $127,599 means the project pays for itself in <strong>less than 1 week</strong> of savings. Quality
+            safeguards include A/B testing, automated scoring on 5% of responses, and instant fallback to GPT-4o if
+            quality drops.
         </div>
 
         <hr>
 
         <h2>Why This Matters for Tom Ferry</h2>
         <ul>
-            <li><strong>Profitable scaling:</strong> Without optimization, 500K agents = $8.5M/year in API costs. With it: $876K. That's a $7.6M/year difference.</li>
-            <li><strong>Faster responses:</strong> Model routing + caching = 56% lower latency. Better UX = higher retention.</li>
-            <li><strong>Competitive moat:</strong> Most competitors throw GPT-4o at everything. Intelligent routing is a compounding technical advantage.</li>
-            <li><strong>Premium upsell:</strong> "Free users get great AI. Coaching members get the best AI." -natural revenue alignment.</li>
+            <li><strong>Profitable scaling:</strong> Without optimization, 500K agents = $8.5M/year in API costs. With
+                it: $876K. That's a $7.6M/year difference.</li>
+            <li><strong>Faster responses:</strong> Model routing + caching = 56% lower latency. Better UX = higher
+                retention.</li>
+            <li><strong>Competitive moat:</strong> Most competitors throw GPT-4o at everything. Intelligent routing is a
+                compounding technical advantage.</li>
+            <li><strong>Premium upsell:</strong> "Free users get great AI. Coaching members get the best AI." -natural
+                revenue alignment.</li>
         </ul>
 
         <div class="footer">
-            <p><strong>Paul Ng</strong> &nbsp;|&nbsp; gaupoit@outlook.com &nbsp;|&nbsp; <a href="https://github.com/gaupoit" style="color: #0066cc; text-decoration: none;">github.com/gaupoit</a></p>
-            <p style="margin-top: 5px;">Full source code available in <code>revii-ai-demo/</code></p>
+            <p><strong>Paul Ng</strong> &nbsp;|&nbsp; gaupoit@outlook.com &nbsp;|&nbsp; <a
+                    href="https://github.com/gaupoit"
+                    style="color: #0066cc; text-decoration: none;">github.com/gaupoit</a></p>
+            <p style="margin-top: 5px;">Full source code available in <a
+                    href="https://github.com/gaupoit/revii-ai-demo"><code>revii-ai-demo</code></a></p>
         </div>
     </div>
 </body>
+
 </html>
