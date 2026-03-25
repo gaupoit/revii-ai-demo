@@ -1,0 +1,16 @@
+{
+  "name": "revii-ai-demo",
+  "version": "1.0.0",
+  "description": "Revii AI Product Improvement Demos - Team Lead Application",
+  "type": "module",
+  "scripts": {
+    "demo:roleplay": "node demo-roleplay.js",
+    "demo:rag": "node demo-rag-pipeline.js",
+    "demo:cost": "node demo-cost-optimizer.js"
+  },
+  "dependencies": {
+    "openai": "^4.70.0",
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.0"
+  }
+}
