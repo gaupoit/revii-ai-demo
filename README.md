@@ -1,6 +1,6 @@
 # Revii AI - Product Improvement Demo
 
-**Author:** Paul Ng | **For:** Tom Ferry International
+**Author:** Paul Ng | **For:** Tom Ferry International | **Live Report:** https://revii-ai-demo.pages.dev
 
 This demo showcases three key improvements to the Revii AI platform, demonstrating hands-on AI/LLM product building skills, cost optimization strategies, and technical leadership thinking.
 
